@@ -43,7 +43,28 @@ public class Assignment2 {
                     
         }
         return out;
-    }   
+    }
+    public int sumOfOddIndex()
+    {
+        int sum = 0;
+        for(int i = 0; i < ArrayOfNumbers.length; i++)
+        {
+            if (i%2 != 0) 
+            {
+                sum = sum + ArrayOfNumbers[i];
+            }
+        }
+        return sum;
+    }    
+
+    public int GetSumOfEvenIndexes(){
+        int sum = 0;
+        for(int i = 0; i<ArrayOfNumbers.length; i+=2){
+            sum += ArrayOfNumbers[i];
+        }
+
+        return sum;
+    }
     public Integer[] findAverage()
     {
         Integer[] DiffFromAve = new Integer[ArrayOfNumbers.length];
