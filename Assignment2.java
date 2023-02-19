@@ -44,4 +44,17 @@ public class Assignment2 {
         }
         return out;
     }   
+    public Integer[] findAverage()
+    {
+        Integer[] DiffFromAve = new Integer[ArrayOfNumbers.length];
+        int sum = 0;
+        for (int i = 0; i < ArrayOfNumbers.length; i++) {
+            sum += ArrayOfNumbers[i];
+        }
+        int average = sum/ArrayOfNumbers.length;
+        for (int i = 0; i < ArrayOfNumbers.length; i++) {
+            DiffFromAve[i] =  ArrayOfNumbers[i] - average;
+        }
+        return DiffFromAve;
+    }
 }
