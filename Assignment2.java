@@ -17,5 +17,31 @@ public class Assignment2 {
     public static void displayMenu()
     {
         System.out.println("1- Find the min\n2- Find the max\n3- Find the average\n4- Find the sum of odd index\n5- Find the sum of even index\n6- Exit\nWhat is your choice?:\n");
+    }
+    public int minNum()
+    {
+        int out=this.ArrayOfNumbers[0];
+        for(int i=1;i<this.ArrayOfNumbers.length;i++)
+        {
+             if(this.ArrayOfNumbers[i]<out)
+             {
+                 out=this.ArrayOfNumbers[i];
+              }
+                    
+         }
+        return out;
+     }
+    public int maxNum()
+    {
+        int out=this.ArrayOfNumbers[0];
+        for(int i=1;i<this.ArrayOfNumbers.length;i++)
+        {
+            if(this.ArrayOfNumbers[i]>out)
+             {
+                 out=this.ArrayOfNumbers[i];
+             }
+                    
+        }
+        return out;
     }   
 }
