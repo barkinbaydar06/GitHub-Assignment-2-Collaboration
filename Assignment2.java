@@ -2,6 +2,7 @@
  * Assignment2
  */
 public class Assignment2 {
+<<<<<<< HEAD
     private Integer[] ArrayOfNumbers;
     private int randomNumber;
     private Random rd;
