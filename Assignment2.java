@@ -57,7 +57,7 @@ public class Assignment2 {
         return sum;
     }    
 
-    public int GetSumOfEvenIndexes(){
+    public int getSumOfEvenIndexes(){
         int sum = 0;
         for(int i = 0; i<ArrayOfNumbers.length; i+=2){
             sum += ArrayOfNumbers[i];
@@ -65,7 +65,7 @@ public class Assignment2 {
 
         return sum;
     }
-    public Integer[] findAverage()
+    public Integer[] findDifferenceAverage()
     {
         Integer[] DiffFromAve = new Integer[ArrayOfNumbers.length];
         int sum = 0;
@@ -77,5 +77,14 @@ public class Assignment2 {
             DiffFromAve[i] =  ArrayOfNumbers[i] - average;
         }
         return DiffFromAve;
+    }
+    public int findAverage()
+    {
+        int sum = 0;
+        for (int i = 0; i < ArrayOfNumbers.length; i++) {
+            sum += ArrayOfNumbers[i];
+        }
+        int average = sum/ArrayOfNumbers.length;
+        return average;
     }
 }
